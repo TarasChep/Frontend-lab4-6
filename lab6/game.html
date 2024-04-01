@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Pong Game</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            display: block;
+            margin: 0 auto;
+        }
+        #scoreBlock {
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #scoreBlock h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        #top-scores, #worst-scores {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 0;
+            list-style-type: none;
+        }
+        #top-scores h3, #worst-scores h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        #top-scores li, #worst-scores li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="gameCanvas" width="400" height="600"></canvas>
+
+<div id="scoreBlock">
+
+    <h2>Score Statistics</h2>
+    <h3>Top Scores</h3>
+    <ul id="top-scores">
+        <li><h3>Top Scores</h3></li>
+    </ul>
+    <h3>Worst Scores</h3>
+    <ul id="worst-scores">
+        <li><h3>Worst Scores</h3></li>
+    </ul>
+
+</div>
+<button id="playAgainButton">Грати ще раз</button>
+
+
+<script src="game.js"></script>
+</body>
+</html>
