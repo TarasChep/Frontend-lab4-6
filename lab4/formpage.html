@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Flower</title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="header-line">
+            <div class="logo">
+                <a href="#">
+                    <img src="rose.png" alt="" width="100">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Menu toggle icon -->
+            </div>
+            <div class="nav">
+                <a class="nav-item" href="#">Catalog</a>
+                <a class="nav-item" href="#">About us</a>
+                <a class="nav-item" href="#">Seasons</a>
+                <a class="nav-item" href="#">Sales</a>
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <img src="bag.png" alt="" width="50">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line"></div>
+<form id="flowerOrderForm">
+    <label class="question" for="occasion">Для якої нагоди вам потрібні квіти?</label>
+    <input type="text" id="occasion" name="occasion" required><br>
+    <label class="question">Оберіть тип квітів:</label><br>
+    <select class="filter-input" name="flowerType">
+        <option value="">Оберіть варіант</option>
+        <option value="roses">Букет A</option>
+        <option value="lilies">Букет Б</option>
+        <option value="some">Букет c</option>
+    </select><br>
+    <!-- Додайте інші варіанти квітів -->
+    <label class="question" for="size"> Виберіть розмір:</label><br>
+    <select id="size" name="size">
+        <option value="small">Малий</option>
+        <option value="medium">Середній</option>
+        <option value="large">Великий</option>
+    </select><br>
+    <label class="question" for="color"> Оберіть колір упаковки:</label><br>
+    <input type="color" id="color" name="color"><br>
+    <label class="question" for="deliveryDate">Оберіть дату доставки:</label><br>
+    <input type="date" id="deliveryDate" name="deliveryDate" required><br>
+    <label class="question" for="deliveryAddress">Вкажіть адресу доставки:</label><br>
+    <textarea id="deliveryAddress" name="deliveryAddress" rows="4" required></textarea><br>
+    <label class="question" for="additionalRequests">Додаткові побажання:</label><br>
+    <textarea id="additionalRequests" name="additionalRequests" rows="4"></textarea><br>
+    <label class="question">Оберіть спосіб оплати:</label><br>
+    <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cashOnDelivery">
+    <label class="answer" for="cashOnDelivery">Готівкою при отриманні</label><br>
+    <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+    <label class="answer" for="creditCard">Кредитною карткою</label><br>
+    <!-- Додайте інші варіанти оплати -->
+    <!-- Додані нові питання -->
+    <label class="question" for="deliveryInstructions">Інструкції щодо доставки:</label><br>
+    <textarea id="deliveryInstructions" name="deliveryInstructions" rows="4"></textarea><br>
+    <label class="question" for="specialRequests">Особливі побажання:</label><br>
+    <input type="text" id="specialRequests" name="specialRequests"><br>
+    <label class="question" for="recipientName">Ім'я отримувача:</label><br>
+    <input type="text" id="recipientName" name="recipientName"><br>
+    <label class="question" for="recipientPhone">Телефон отримувача:</label><br>
+    <input type="tel" id="recipientPhone" name="recipientPhone" value="+380">
+    <input type="submit" value="Замовити">
+</form>
+<script src="formpage.js"></script>
+
+<div class="line"></div>
+
+<div class="filters">
+    <div>
+        <label for="occasion">По нагоді</label>
+        <input type="text" class="filter-input" name="occasion" />
+    </div>
+    <div>
+        <label for="flowerType">По типу букету</label>
+        <select id="flowerType" class="filter-input" name="flowers"> <!-- Змінено з "flowerType" на "flowers" -->
+            <option value="">Оберіть варіант</option>
+            <option value="roses">Букет A</option>
+            <option value="lilies">Букет Б</option>
+            <option value="some">Букет c</option>
+        </select>
+    </div>
+    <div>
+        <label for="recipientName">По імені отримувача</label>
+        <input type="text" class="filter-input" name="recipientName" />
+        <button class="btn filter-btn">Фільтрувати</button>
+    </div>
+</div>
+
+<div>
+    <ul class="survey-results"></ul>
+</div>
+<div class="line"></div>
+<div class="footer">
+    <div class="social">
+        <a href="@"><i class="fa-brands fa-facebook"></i></a>
+        <a href="@"><i class="fa-brands fa-instagram"></i></a>
+        <a href="@"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer-nav">
+        <a href="">Home</a>
+        <a href="">Contact us</a>
+        <a href="">About us</a>
+    </div>
+</div>
+<div class="menu-toggle">
+    <i class="fas fa-bars"></i> <!-- Іконка "бургер" меню -->
+</div>
+<div class="nav">
+    <a class="nav-item" href="#">Catalog</a>
+    <a class="nav-item" href="#">About us</a>
+    <a class="nav-item" href="#">Seasons</a>
+    <a class="nav-item" href="#">Sales</a>
+</div>
+</body>
+</html>

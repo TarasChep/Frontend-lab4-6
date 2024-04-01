@@ -1,0 +1,441 @@
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.header {
+    margin-top: 20px;
+    margin: 0 auto;
+    background-color: pink;
+    padding: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 80%;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    font-size: 2.75rem;
+    font-family: 'Protest Riot', sans-serif;
+    color:  white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover{
+    font-size: 45px;
+    color:red;
+}
+
+.phone {
+    display: none;
+}
+
+.cart {
+    border-left: 5px solid #ffffff;
+    padding-left: 10px;
+}
+
+.phone_num {
+    color: #fbe5c8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.line {
+    width: 78%;
+    margin: 20px auto 0;
+    border-bottom: 2px solid #8FDDE7;
+}
+.slider-wrapper {
+    position: relative;
+    /*max-width: 48ram;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto ;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth ;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(255, 215, 0, 0.2);
+
+    width: 78%;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    margin-top: 10px;
+    max-width: 100%;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(255, 215, 0, 0.3);
+    height: auto;
+}
+.slider-nav{
+
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+.container1{
+    padding: 2rem;
+}
+
+.pink-line{
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: pink;
+    height: 100px;
+    width: 80%;
+}
+
+.text-pop{
+    margin-top: auto;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Protest Riot', sans-serif;
+    color:  white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+.flex-container {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    aspect-ratio: 4/3;
+    width: calc(33.33% - 24px);
+    max-width: 280px;
+    height: auto;
+    background: #B6E5D8;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(255, 215, 0, 0.15);
+    border-radius: 30px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.box-info {
+    width: 100%;
+    text-align: center;
+}
+
+.box-info-text {
+    font-size: 18px;
+}
+
+
+
+
+
+
+.pop-img {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.box-info {
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container-catalog {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box-catalog {
+    aspect-ratio: 4/3;
+    width: 280px;
+    height: 340px;
+    background: #B6E5D8;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(255, 215, 0, 0.15);
+    border-radius: 30px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.box-info-text {
+    font-size: 20px;
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+.footer{
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: pink;
+    height: 200px;
+    width: 80%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.footer {
+    margin-top: 20px;
+    background-color: pink;
+    height: 200px;
+    width: 80%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social a i {
+    font-size: 3em;
+    color: #8FDDE7;
+    opacity: 0.9;
+}
+
+.social a:hover {
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s linear;
+}
+
+.footer-nav a:hover {
+    color: red;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav {
+    display: flex;
+
+}
+
+.nav-item {
+    margin: 10px 0;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: red;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header-line {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .nav-item {
+        margin: 10px 0;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s linear;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* Стилізація контейнера форми */
+/* Стилізація контейнера форми */
+#flowerOrderForm {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #f3ccc7;
+    border-radius: 5px;
+    background-color:  #d2f1f5;
+}
+
+/* Стилізація міток */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стилізація текстових полів та текстових областей */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px; /* Збільшено відступ між полями */
+    border: 1px solid #f3ccc7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Стилізація радіокнопок та чекбоксів */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Стилізація кнопки Submit */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #f3ccc7;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.question {
+    font-weight: bold;
+
+    font-size: 18px; /* Змініть розмір шрифту на ваш смак */
+}
+
+/* Стилізація варіантів відповідей */
+.answer {
+    font-size: 14px; /* Змініть розмір шрифту на ваш смак */
+}
+.checkbox{
+
+}
+/* Стилізація додаткових побажань */
+#additionalRequests {
+    resize: vertical; /* Дозволяє змінювати розмір тільки по вертикалі */
+}
+.filters{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
