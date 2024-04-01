@@ -1,0 +1,28 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "answers": ["London", "Berlin", "Paris", "Madrid"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "answers": ["Jupiter", "Mars", "Earth", "Saturn"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "answers": ["William Shakespeare", "Jane Austen", "Leo Tolstoy", "Charles Dickens"],
+    "correctAnswer": "William Shakespeare"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "answers": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "answers": ["H2O", "CO2", "O2", "N2"],
+    "correctAnswer": "H2O"
+  }
+]
+
